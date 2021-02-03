@@ -26,16 +26,24 @@
 <li>HTTP (80/TCP)</li>
 <li>HTTPS (443/TCP)</li>
 </ul>
+
 ![imagen](https://github.com/jesus2307/HTTPS-con-Let-s-Encrypt-Docker-y-Docker-Compose/blob/main/imagen/Captura1.PNG "imagen")
+
 <h3 id="paso-2"><span class="header-section-number">1.2.2</span> Paso 2</h3>
 <p><strong>Obtener la dirección IP pública</strong> de su instancia EC2 en AWS.</p>
+
 ![imagen](https://github.com/jesus2307/HTTPS-con-Let-s-Encrypt-Docker-y-Docker-Compose/blob/main/imagen/Captura2.PNG "imagen")
+
 <h3 id="paso-3"><span class="header-section-number">1.2.3</span> Paso 3</h3>
 <p><strong>Registrar un nombre de dominio</strong> en algún proveedor de nombres de dominio gratuito. Por ejemplo, puede hacer uso de <a href="http://www.freenom.com/">Freenom</a>.</p>
+
 ![imagen](https://github.com/jesus2307/HTTPS-con-Let-s-Encrypt-Docker-y-Docker-Compose/blob/main/imagen/Captura3.PNG "imagen")
+
 <h3 id="paso-4"><span class="header-section-number">1.2.4</span> Paso 4</h3>
 <p><strong>Configurar los registros DNS del proveedor de nombres de dominio</strong> para que el nombre de dominio de ha registrado pueda resolver hacia la dirección IP pública de su instancia EC2 de AWS.</p>
 <p>Si utiliza el proveedor de nombres de dominio <a href="http://www.freenom.com/">Freenom</a> tendrá que acceder desde el panel de control, a la sección de sus dominios contratados y una vez allí seleccionar <strong>Manage Freenom DNS</strong>.</p>
+
 ![imagen](https://github.com/jesus2307/HTTPS-con-Let-s-Encrypt-Docker-y-Docker-Compose/blob/main/imagen/Captura4.PNG "imagen")
+
 <p>Tendrá que añadir dos registros DNS de tipo A con la dirección IP pública de su instancia EC2 de AWS. Un registro estará en blanco para que pueda resolver el nombre de dominio sin las <code>www</code> y el otro registro estará con las <code>www</code>.</p>
 
