@@ -45,5 +45,10 @@
 
 ![imagen](https://github.com/jesus2307/HTTPS-con-Let-s-Encrypt-Docker-y-Docker-Compose/blob/main/imagen/Captura4.PNG "imagen")
 
+ErkJggg==" /></p>
+<p><strong>Nota:</strong> Tenga en cuenta que una vez que ha realizado los cambios en el DNS habrá que esperar hasta que los cambios se progaguen. Puede hacer uso de la utilidad <a href="https://dnschecker.org/">dnschecker.org</a> para comprobar el estado de propagación de las DNS.</p>
+
+![imagen](https://github.com/jesus2307/HTTPS-con-Let-s-Encrypt-Docker-y-Docker-Compose/blob/main/imagen/Captura5.PNG "imagen")
+
 <p>Tendrá que añadir dos registros DNS de tipo A con la dirección IP pública de su instancia EC2 de AWS. Un registro estará en blanco para que pueda resolver el nombre de dominio sin las <code>www</code> y el otro registro estará con las <code>www</code>.</p>
 
