@@ -15,3 +15,24 @@
 <p><a href="https://hub.docker.com/r/steveltn/https-portal/">HTTPS-PORTAL</a> es una imagen <a href="https://www.docker.com">Docker</a> que contiene un servidor <a href="https://es.wikipedia.org/wiki/Protocolo_seguro_de_transferencia_de_hipertexto">HTTPS</a> totalmente automatizado que hace uso de las tecnologías <a href="https://nginx.org/en/">Nginx</a> y <a href="https://letsencrypt.org">Let’s Enctrypt</a>. Los certificados SSL se obtienen y renuevan de <a href="https://letsencrypt.org">Let’s Encrypt</a> automáticamente.</p>
 <p>Esta imagen está preparada para permitir que cualquier aplicación web pueda ejecutarse a través de <a href="https://es.wikipedia.org/wiki/Protocolo_seguro_de_transferencia_de_hipertexto">HTTPS</a> con una configuración muy sencilla.</p>
 <p>Puede encontrar más información sobre <a href="https://hub.docker.com/r/steveltn/https-portal/">HTTPS-PORTAL</a> en la web oficial de <a href="https://hub.docker.com/r/steveltn/https-portal/">Docker Hub</a>.</p>
+
+<h2 id="tareas-a-realizar"><span class="header-section-number">1.2</span> Tareas a realizar</h2>
+<p>A continuación se describen <strong>muy brevemente</strong> algunas de las tareas que tendrá que realizar.</p>
+<h3 id="paso-1"><span class="header-section-number">1.2.1</span> Paso 1</h3>
+<p><strong>Crear una instancia EC2</strong> en <a href="https://wordpress.org">Amazon Web Services (AWS)</a>.</p>
+<p>Cuando esté creando la instancia deberá <strong>configurar los puertos</strong> que estarán abiertos para poder conectarnos por SSH y para poder acceder por HTTP/HTTPS.</p>
+<ul>
+<li>SSH (22/TCP)</li>
+<li>HTTP (80/TCP)</li>
+<li>HTTPS (443/TCP)</li>
+</ul>
+<h3 id="paso-2"><span class="header-section-number">1.2.2</span> Paso 2</h3>
+<p><strong>Obtener la dirección IP pública</strong> de su instancia EC2 en AWS.</p>
+<h3 id="paso-3"><span class="header-section-number">1.2.3</span> Paso 3</h3>
+<p><strong>Registrar un nombre de dominio</strong> en algún proveedor de nombres de dominio gratuito. Por ejemplo, puede hacer uso de <a href="http://www.freenom.com/">Freenom</a>.</p>
+<h3 id="paso-4"><span class="header-section-number">1.2.4</span> Paso 4</h3>
+<p><strong>Configurar los registros DNS del proveedor de nombres de dominio</strong> para que el nombre de dominio de ha registrado pueda resolver hacia la dirección IP pública de su instancia EC2 de AWS.</p>
+<p>Si utiliza el proveedor de nombres de dominio <a href="http://www.freenom.com/">Freenom</a> tendrá que acceder desde el panel de control, a la sección de sus dominios contratados y una vez allí seleccionar <strong>Manage Freenom DNS</strong>.</p>
+<p>Tendrá que añadir dos registros DNS de tipo A con la dirección IP pública de su instancia EC2 de AWS. Un registro estará en blanco para que pueda resolver el nombre de dominio sin las <code>www</code> y el otro registro estará con las <code>www</code>.</p>
+<p><strong>Ejemplo:</strong> En la siguiente imagen se muestra cómo sería la configuración de los registros DNS para resolver hacia la dirección IP 54.236.57.173.</p>
+<p><img 
