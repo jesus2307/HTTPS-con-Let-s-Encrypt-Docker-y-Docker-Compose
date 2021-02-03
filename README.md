@@ -45,7 +45,7 @@
 
 ![imagen](https://github.com/jesus2307/HTTPS-con-Let-s-Encrypt-Docker-y-Docker-Compose/blob/main/imagen/Captura4.PNG "imagen")
 
-ErkJggg==" /></p>
+
 <p><strong>Nota:</strong> Tenga en cuenta que una vez que ha realizado los cambios en el DNS habrá que esperar hasta que los cambios se progaguen. Puede hacer uso de la utilidad <a href="https://dnschecker.org/">dnschecker.org</a> para comprobar el estado de propagación de las DNS.</p>
 
 ![imagen](https://github.com/jesus2307/HTTPS-con-Let-s-Encrypt-Docker-y-Docker-Compose/blob/main/imagen/Captura5.PNG "imagen")
