@@ -64,3 +64,19 @@ ubuntu@ip-172-31-14-3:~/iaw-Pr-ctica-PrestaShop$ sudo docker-compose up
 <h3 id="paso-6"><span class="header-section-number">1.2.6</span> Paso 6</h3>
 <p><strong>Modificar el archivo <code>docker-compose.yml</code> de alguna de las prácticas anteriores</strong> para incluir el servicio de <a href="https://hub.docker.com/r/steveltn/https-portal/">HTTPS-PORTAL</a>.</p>
 <p>Una vez llegado a este punto, sólo queda desplegar los servicios con <a href="https://docs.docker.com/compose/">Docker Compose</a> y ya tendríamos nuestro sitio web con <strong>HTTPS habilidado y todo configurado para que el certificado se vaya renovando automáticamente</strong>.</p>
+```
+https-portal:
+    image: steveltn/https-portal:1
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+    environment:
+      DOMAINS: 'jesus-docker-iwa.ga -> http://prestashop:80'
+      #STAGE: 'staging'
+      STAGE: 'production' # Don't use production until staging works
+      # FORCE_RENEW: 'true'
+    networks: 
+      - frontend-network
+      ```
+      
