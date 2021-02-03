@@ -54,9 +54,13 @@
 
 <h3 id="paso-5"><span class="header-section-number">1.2.5</span> Paso 5</h3>
 <p><strong>Realizar la instalación y configuración de Docker y Docker Compose</strong> en la instancia EC2 de AWS.</p>
+
 ```
+
 ubuntu@ip-172-31-14-3:~/iaw-Pr-ctica-PrestaShop$ sudo docker-compose up
+
 ```
+
 <h3 id="paso-6"><span class="header-section-number">1.2.6</span> Paso 6</h3>
 <p><strong>Modificar el archivo <code>docker-compose.yml</code> de alguna de las prácticas anteriores</strong> para incluir el servicio de <a href="https://hub.docker.com/r/steveltn/https-portal/">HTTPS-PORTAL</a>.</p>
 <p>Una vez llegado a este punto, sólo queda desplegar los servicios con <a href="https://docs.docker.com/compose/">Docker Compose</a> y ya tendríamos nuestro sitio web con <strong>HTTPS habilidado y todo configurado para que el certificado se vaya renovando automáticamente</strong>.</p>
