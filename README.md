@@ -87,9 +87,10 @@ https-portal:
 <h3 id="paso-6"><span class="header-section-number">1.2.7</span> Paso 7</h3>
 <p><strong>Segimos el menu de intalacion</strong>.</p>
 
-![imagen](https://github.com/jesus2307/HTTPS-con-Let-s-Encrypt-Docker-y-Docker-Compose/blob/main/imagen/Captura5.PNG "imagen")
+![imagen](https://github.com/jesus2307/HTTPS-con-Let-s-Encrypt-Docker-y-Docker-Compose/blob/main/imagen/Captura7.PNG "imagen")
 
-<h3 id="paso-6"><span class="header-section-number">1.2.7</span> Paso 7</h3>
+<h3 id="paso-6"><span class="header-section-number">1.2.8</span> Paso 7</h3>
 <p><strong>inciamos sesion con jesus@gmail.com/usuario123</strong>.</p>
 
-![imagen](https://github.com/jesus2307/HTTPS-con-Let-s-Encrypt-Docker-y-Docker-Compose/blob/main/imagen/Captura5.PNG "imagen")
+![imagen](https://github.com/jesus2307/HTTPS-con-Let-s-Encrypt-Docker-y-Docker-Compose/blob/main/imagen/Captura8.PNG "imagen")
+
