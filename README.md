@@ -80,7 +80,8 @@ https-portal:
     networks: 
       - frontend-network
       ```
-      <h3 id="paso-6"><span class="header-section-number">1.3</span> Paso 7</h3>
+      
+<h3 id="paso-6"><span class="header-section-number">1.3</span> Paso 7</h3>
 <p><strong>Segimos el menu de intalacion</strong>.</p>
 
       
