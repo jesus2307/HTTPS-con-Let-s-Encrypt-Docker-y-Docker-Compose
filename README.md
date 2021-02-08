@@ -95,6 +95,7 @@ https-portal:
 ![imagen](https://github.com/jesus2307/HTTPS-con-Let-s-Encrypt-Docker-y-Docker-Compose/blob/main/imagen/Captura8.PNG "imagen")
 <h3 id="paso-6"><span class="header-section-number">1.2.8</span> Paso 8</h3>
 <p><strong>Configuramos las siguinetes tablas en mysql</strong>.</p>
+
 ![imagen](https://github.com/jesus2307/HTTPS-con-Let-s-Encrypt-Docker-y-Docker-Compose/blob/main/imagen/8080.PNG "imagen")
 
 # fuente:
